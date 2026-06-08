@@ -1,5 +1,3 @@
-`[Senior]`
-
 # Evaluation
 
 ## Why Evaluation is Non-Negotiable

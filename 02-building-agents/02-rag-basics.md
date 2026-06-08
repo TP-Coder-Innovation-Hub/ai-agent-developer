@@ -1,5 +1,3 @@
-`[Mid]`
-
 # RAG Basics
 
 ## Why RAG
@@ -21,6 +19,8 @@ Query -> Embed -> Search Vector DB -> Retrieve Top K Chunks
 ```
 
 Four stages: ingest, index, retrieve, generate.
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — RAG pipeline chunk embed store vector DB retrieve generate
 
 ## Stage 1: Ingest (Chunk Documents)
 
@@ -72,6 +72,8 @@ def chunk_by_structure(markdown_text: str) -> list[dict]:
 ```
 
 Chunking strategy matters. Fixed-size chunks are simple but split mid-sentence. Structure-based chunks preserve semantics but vary in size. Choose based on your content.
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — document chunking strategies fixed-size overlap vs structural headers
 
 ## Stage 2: Index (Embed and Store)
 

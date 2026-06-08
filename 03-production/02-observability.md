@@ -1,5 +1,3 @@
-`[Senior]`
-
 # Observability
 
 ## Why Tracing Matters

@@ -1,5 +1,3 @@
-`[Senior]`
-
 # Cost Optimization
 
 ## Token Economics

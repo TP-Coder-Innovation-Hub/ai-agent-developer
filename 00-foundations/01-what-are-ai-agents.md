@@ -1,5 +1,3 @@
-`[Entry]`
-
 # What Are AI Agents
 
 ## LLM is not an Agent
@@ -37,6 +35,8 @@ def agent_loop(user_query):
 
 The agent loop is `perceive -> reason -> act -> learn`. The LLM alone stops at "reason." The agent wraps the LLM in a loop that can interact with the world.
 
+> 🖼️ **[IMAGE_PLACEHOLDER]** — LLM vs agent perceive reason act loop comparison
+
 ## Why Agents Matter
 
 LLMs answer questions. Agents automate workflows.
@@ -57,6 +57,8 @@ Not everything needs an agent. Use this decision framework:
 | Single LLM call, no tools | Direct API call | Summarize text, translate |
 | Multi-step, needs tools | Agent | Research a topic, process a refund |
 | Complex, needs coordination | Multi-agent system | Full research pipeline with review |
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — agent vs workflow vs script decision tree task complexity
 
 If a script works, use a script. If a single API call works, use a single API call. Agents add complexity, latency, and cost. Use them when the task genuinely requires autonomous decision-making.
 

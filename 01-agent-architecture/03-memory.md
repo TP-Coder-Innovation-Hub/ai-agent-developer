@@ -1,5 +1,3 @@
-`[Mid]`
-
 # Memory
 
 ## Why Agents Need Memory
@@ -7,6 +5,8 @@
 An agent without memory forgets everything between interactions. It cannot remember what the user said two turns ago, what tools it already called, or what it learned in previous sessions. Memory gives the agent context.
 
 There are three types of memory in agent systems. Each solves a different problem.
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — agent memory types short-term conversation long-term vector working task state
 
 ## Short-Term Memory (Conversation History)
 

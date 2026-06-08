@@ -1,5 +1,3 @@
-`[Mid]`
-
 # Structured Outputs
 
 ## The Problem

@@ -1,5 +1,3 @@
-`[Mid]`
-
 # Tools and Functions
 
 ## What Are Tools
@@ -9,6 +7,8 @@ Tools are functions the agent can call to interact with the world. Think of them
 ## Tool Schema Definition
 
 Every tool needs a schema that tells the LLM what it does and what parameters it accepts. This is an API contract.
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — tool schema definition LLM decision tool execution result flow
 
 ```python
 tools = [

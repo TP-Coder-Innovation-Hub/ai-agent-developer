@@ -24,7 +24,6 @@ By the end of this guide you will be able to:
 
 1. Read modules in order. Each builds on the previous.
 2. Every code example is runnable. Copy, modify, break, fix.
-3. `[Entry]` = foundational. `[Mid]` = intermediate. `[Senior]` = advanced.
 4. Refer to [AGENTS.md](AGENTS.md) for the design principles behind this guide.
 
 ## Prerequisites

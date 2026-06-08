@@ -1,5 +1,3 @@
-`[Mid]`
-
 # Your First Agent
 
 A complete, runnable agent using the OpenAI API with function calling. Every line explained.

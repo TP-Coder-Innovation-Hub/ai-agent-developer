@@ -1,5 +1,3 @@
-`[Senior]`
-
 # Deployment
 
 ## Wrapping an Agent in an API

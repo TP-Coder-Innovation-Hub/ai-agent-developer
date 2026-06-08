@@ -1,10 +1,10 @@
-`[Mid]`
-
 # The Agent Loop
 
 ## The Core Loop: Observe, Think, Act
 
 The agent loop is the fundamental execution model. Without it, an LLM is a stateless function: text in, text out. With it, the LLM becomes an agent that can interact with the world.
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — agent loop observe think act tool call respond cycle diagram
 
 ```python
 import json

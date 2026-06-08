@@ -1,10 +1,10 @@
-`[Mid]`
-
 # Planning
 
 ## When to Plan vs When to React
 
 Not every task needs a plan. Simple tasks (single tool call, direct answer) work fine with reactive execution: the LLM sees the input and acts. Complex tasks (multiple dependent steps, conditional logic, backtracking) benefit from explicit planning.
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — ReAct reactive vs plan-and-execute vs reflexion comparison strategies
 
 Rule of thumb: if the task requires more than 3 sequential tool calls with dependencies between them, plan first.
 

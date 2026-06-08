@@ -1,10 +1,10 @@
-`[Entry]`
-
 # LLM Fundamentals
 
 ## How LLMs Work
 
 An LLM is a statistical model trained to predict the next token. Given a sequence of tokens, it outputs a probability distribution over possible next tokens. Sampling from that distribution generates text.
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — LLM next token prediction probability distribution sampling
 
 ```python
 # Simplified: what the model actually does

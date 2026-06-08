@@ -1,5 +1,3 @@
-`[Senior]`
-
 # Multi-Agent Systems
 
 ## Why Multiple Agents
@@ -11,6 +9,8 @@ Reasons to use multiple agents:
 - **Parallelism**: Independent subtasks run concurrently. Three research agents search different sources simultaneously.
 - **Quality control**: One agent produces output, another reviews it. Reviewer catches errors the producer missed.
 - **Separation of concerns**: Different permission levels, different tool access, different safety boundaries.
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — multi-agent orchestrator researcher writer reviewer specialist agents
 
 ## Orchestrator Pattern
 
@@ -129,6 +129,8 @@ result = orchestrator.run("Write a report on the current state of AI agent frame
 ## Communication Between Agents
 
 Agents communicate through structured messages, not free-form text. Define a message schema:
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — multi-agent communication structured messages orchestrator delegation
 
 ```python
 class AgentResult(BaseModel):

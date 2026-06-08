@@ -1,5 +1,3 @@
-`[Entry]`
-
 # AI Safety and Responsibility
 
 ## Why Safety Matters for Agents
@@ -53,6 +51,8 @@ Mitigations:
 
 An attacker crafts input that overrides your instructions.
 
+> 🖼️ **[IMAGE_PLACEHOLDER]** — prompt injection attack flow user input overrides system instructions
+
 ```python
 # User input that attempts injection
 user_input = """
@@ -80,6 +80,8 @@ Mitigations:
 ## Guardrails
 
 Guardrails are validation layers between the LLM and the action.
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — guardrails validation layer between LLM output and tool execution
 
 ```python
 from pydantic import BaseModel, field_validator

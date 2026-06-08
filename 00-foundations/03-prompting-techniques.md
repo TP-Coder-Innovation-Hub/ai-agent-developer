@@ -1,5 +1,3 @@
-`[Entry]`
-
 # Prompting Techniques
 
 ## Why Prompting Matters
@@ -40,6 +38,8 @@ response = client.chat.completions.create(model="gpt-4o", messages=messages)
 
 Examples teach the model the pattern. Use 2-5 examples. More examples improve consistency but consume tokens. Each example costs money and reduces available context.
 
+> 🖼️ **[IMAGE_PLACEHOLDER]** — few-shot prompting pattern examples input output
+
 ## Chain-of-Thought
 
 Ask the model to reason step-by-step before answering.
@@ -68,6 +68,8 @@ Solve step by step.
 Chain-of-thought improves accuracy on reasoning tasks significantly. For agents, this is not optional. When the agent needs to decide which tool to use or whether a task is complete, asking the model to reason first produces better decisions.
 
 The key insight: the model's output quality depends on the reasoning visible in the output. Intermediate reasoning steps improve final answer quality because the model is essentially doing more computation per answer.
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — chain-of-thought reasoning step by step intermediate steps
 
 ## Structured Output
 

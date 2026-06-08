@@ -1,5 +1,3 @@
-`[Mid]`
-
 # Agent Frameworks
 
 ## Framework vs Raw API
