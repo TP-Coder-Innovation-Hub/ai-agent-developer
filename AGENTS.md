@@ -79,13 +79,29 @@ When helping learners build agents, apply these guidelines:
 
 ```
 ai-agent-developer/
-├── README.md              # This guide: AI Agent Developer Fundamentals
-├── AGENTS.md              # This file: AI assistant context and guidelines
-└── (future modules and exercises will be added)
+├── README.md
+├── AGENTS.md
+├── 00-foundations/
+│   ├── 01-what-are-ai-agents.md
+│   ├── 02-llm-fundamentals.md
+│   ├── 03-prompting-techniques.md
+│   └── 04-ai-safety-and-responsibility.md
+├── 01-agent-architecture/
+│   ├── 01-agent-loop.md
+│   ├── 02-tools-and-functions.md
+│   ├── 03-memory.md
+│   ├── 04-planning.md
+│   └── 05-multi-agent-systems.md
+├── 02-building-agents/
+│   ├── 01-first-agent.md
+│   ├── 02-rag-basics.md
+│   ├── 03-structured-outputs.md
+│   └── 04-agent-frameworks.md
+├── 03-production/
+│   ├── 01-evaluation.md
+│   ├── 02-observability.md
+│   ├── 03-cost-optimization.md
+│   └── 04-deployment.md
+└── 04-capstone/
+    └── README.md
 ```
-
-Planned additions:
-- `examples/` -- runnable code examples for each section
-- `exercises/` -- hands-on exercises with solutions
-- `eval/` -- evaluation harnesses and test cases
-- `tools/` -- MCP server implementations for practice tools
