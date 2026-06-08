@@ -20,7 +20,16 @@ Query -> Embed -> Search Vector DB -> Retrieve Top K Chunks
 
 Four stages: ingest, index, retrieve, generate.
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — RAG pipeline chunk embed store vector DB retrieve generate
+```mermaid
+flowchart LR
+    DOC["Documents"] --> CHUNK["Chunking"]
+    CHUNK --> EMB["Embedding Model"]
+    EMB --> VDB["Vector Database"]
+    Q["User Query"] --> QEMB["Embed Query"]
+    QEMB --> VDB
+    VDB -->|"top-k similar"| CTX["Retrieved Context"]
+    CTX --> LLM["LLM generates\nanswer with context"]
+```
 
 ## Stage 1: Ingest (Chunk Documents)
 
@@ -73,7 +82,19 @@ def chunk_by_structure(markdown_text: str) -> list[dict]:
 
 Chunking strategy matters. Fixed-size chunks are simple but split mid-sentence. Structure-based chunks preserve semantics but vary in size. Choose based on your content.
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — document chunking strategies fixed-size overlap vs structural headers
+```mermaid
+graph TD
+    subgraph "Fixed-size chunks"
+        F1["Chunk 1: chars 1-500"]
+        F2["Chunk 2: chars 450-950\n(50 char overlap)"]
+        F3["Chunk 3: chars 900-1400"]
+    end
+    subgraph "Structural chunks"
+        S1["Chunk 1: Header 1 content"]
+        S2["Chunk 2: Header 2 content"]
+        S3["Chunk 3: Header 3 content"]
+    end
+```
 
 ## Stage 2: Index (Embed and Store)
 

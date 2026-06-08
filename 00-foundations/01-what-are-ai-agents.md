@@ -35,7 +35,18 @@ def agent_loop(user_query):
 
 The agent loop is `perceive -> reason -> act -> learn`. The LLM alone stops at "reason." The agent wraps the LLM in a loop that can interact with the world.
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — LLM vs agent perceive reason act loop comparison
+```mermaid
+graph LR
+    subgraph "LLM"
+        L_IN["Input text"] --> LLM["Language Model"]
+        LLM --> L_OUT["Output text"]
+    end
+    subgraph "Agent"
+        A_OBS["Observe"] --> A_THINK["Reason"]
+        A_THINK --> A_ACT["Act (use tools)"]
+        A_ACT --> A_OBS
+    end
+```
 
 ## Why Agents Matter
 
@@ -58,7 +69,14 @@ Not everything needs an agent. Use this decision framework:
 | Multi-step, needs tools | Agent | Research a topic, process a refund |
 | Complex, needs coordination | Multi-agent system | Full research pipeline with review |
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — agent vs workflow vs script decision tree task complexity
+```mermaid
+flowchart TD
+    Start[What kind of task?] --> Q1{Fixed steps?}
+    Q1 -->|Yes| SCRIPT["Script\n(deterministic)"]
+    Q1 -->|No| Q2{Branching logic?}
+    Q2 -->|Yes, predefined| WF["Workflow\n(if-then rules)"]
+    Q2 -->|No, needs judgment| AGENT["Agent\n(LLM decides)"]
+```
 
 If a script works, use a script. If a single API call works, use a single API call. Agents add complexity, latency, and cost. Use them when the task genuinely requires autonomous decision-making.
 

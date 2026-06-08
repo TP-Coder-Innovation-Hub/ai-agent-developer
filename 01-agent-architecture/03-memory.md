@@ -6,7 +6,12 @@ An agent without memory forgets everything between interactions. It cannot remem
 
 There are three types of memory in agent systems. Each solves a different problem.
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — agent memory types short-term conversation long-term vector working task state
+```mermaid
+graph TD
+    MEM["Agent Memory"] --> STM["Short-term\nCurrent conversation\n(last N messages)"]
+    MEM --> LTM["Long-term\nVector store\n(past interactions)"]
+    MEM --> WM["Working\nCurrent task state\n(plan, progress)"]
+```
 
 ## Short-Term Memory (Conversation History)
 

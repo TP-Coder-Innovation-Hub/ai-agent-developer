@@ -38,7 +38,14 @@ response = client.chat.completions.create(model="gpt-4o", messages=messages)
 
 Examples teach the model the pattern. Use 2-5 examples. More examples improve consistency but consume tokens. Each example costs money and reduces available context.
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — few-shot prompting pattern examples input output
+```mermaid
+graph TD
+    PROMPT["Prompt"] --> EX1["Example 1:\nInput → Output"]
+    PROMPT --> EX2["Example 2:\nInput → Output"]
+    PROMPT --> EX3["Example 3:\nInput → Output"]
+    PROMPT --> QUERY["Your Query:\nInput → ?"]
+    EX1 & EX2 & EX3 -->|"pattern learned"| ANSWER["LLM generates\noutput following pattern"]
+```
 
 ## Chain-of-Thought
 
@@ -69,7 +76,14 @@ Chain-of-thought improves accuracy on reasoning tasks significantly. For agents,
 
 The key insight: the model's output quality depends on the reasoning visible in the output. Intermediate reasoning steps improve final answer quality because the model is essentially doing more computation per answer.
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — chain-of-thought reasoning step by step intermediate steps
+```mermaid
+flowchart LR
+    Q["Question"] --> S1["Step 1:\nIdentify facts"]
+    S1 --> S2["Step 2:\nApply logic"]
+    S2 --> S3["Step 3:\nIntermediate result"]
+    S3 --> S4["Step 4:\nFinal answer"]
+    NOTE["Each step is visible\n→ easier to verify"]
+```
 
 ## Structured Output
 

@@ -4,7 +4,20 @@
 
 Not every task needs a plan. Simple tasks (single tool call, direct answer) work fine with reactive execution: the LLM sees the input and acts. Complex tasks (multiple dependent steps, conditional logic, backtracking) benefit from explicit planning.
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — ReAct reactive vs plan-and-execute vs reflexion comparison strategies
+```mermaid
+graph TD
+    subgraph "ReAct"
+        R["Reason → Act → Observe\nLoop until done"]
+    end
+    subgraph "Plan-and-Execute"
+        P1["Plan all steps first"] --> P2["Execute step by step"]
+    end
+    subgraph "Reflexion"
+        RF1["Attempt task"] --> RF2["Evaluate result"]
+        RF2 --> RF3["Reflect on mistakes"]
+        RF3 -->|"retry"| RF1
+    end
+```
 
 Rule of thumb: if the task requires more than 3 sequential tool calls with dependencies between them, plan first.
 

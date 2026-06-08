@@ -4,7 +4,16 @@
 
 An LLM is a statistical model trained to predict the next token. Given a sequence of tokens, it outputs a probability distribution over possible next tokens. Sampling from that distribution generates text.
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — LLM next token prediction probability distribution sampling
+```mermaid
+flowchart LR
+    CTX["The cat sat on the"] --> LLM[LLM]
+    LLM --> DIST["Probability Distribution"]
+    DIST --> MAT["mat: 0.6"]
+    DIST --> FLOOR["floor: 0.2"]
+    DIST --> COUCH["couch: 0.15"]
+    DIST --> ROOF["roof: 0.05"]
+    MAT --> PICK["Sample → 'mat'"]
+```
 
 ```python
 # Simplified: what the model actually does

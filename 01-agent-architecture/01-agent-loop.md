@@ -4,7 +4,14 @@
 
 The agent loop is the fundamental execution model. Without it, an LLM is a stateless function: text in, text out. With it, the LLM becomes an agent that can interact with the world.
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — agent loop observe think act tool call respond cycle diagram
+```mermaid
+flowchart LR
+    OBS["Observe\n(receive input)"] --> THINK["Think\n(reason about next step)"]
+    THINK --> ACT["Act\n(use tool or respond)"]
+    ACT -->|"tool result"| OBS
+    ACT -->|"final answer"| RESPOND["Respond to User"]
+    RESPOND --> OBS
+```
 
 ```python
 import json

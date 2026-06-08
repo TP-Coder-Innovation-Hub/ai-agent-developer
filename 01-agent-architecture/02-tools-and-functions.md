@@ -8,7 +8,18 @@ Tools are functions the agent can call to interact with the world. Think of them
 
 Every tool needs a schema that tells the LLM what it does and what parameters it accepts. This is an API contract.
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — tool schema definition LLM decision tool execution result flow
+```mermaid
+sequenceDiagram
+    participant U as User
+    participant A as Agent
+    participant T as Tool (search)
+    U->>A: "What's the weather in Tokyo?"
+    A->>A: Reason: need weather data
+    A->>T: call weather_api(city="Tokyo")
+    T-->>A: {temp: 22°C, sunny}
+    A->>A: Format response
+    A-->>U: "Tokyo is 22°C and sunny"
+```
 
 ```python
 tools = [

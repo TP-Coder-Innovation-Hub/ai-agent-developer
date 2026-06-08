@@ -10,7 +10,16 @@ Reasons to use multiple agents:
 - **Quality control**: One agent produces output, another reviews it. Reviewer catches errors the producer missed.
 - **Separation of concerns**: Different permission levels, different tool access, different safety boundaries.
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — multi-agent orchestrator researcher writer reviewer specialist agents
+```mermaid
+graph TD
+    ORCH["Orchestrator\n(delegates tasks)"] --> R["Researcher\n(finds information)"]
+    ORCH --> W["Writer\n(drafts content)"]
+    ORCH --> REV["Reviewer\n(checks quality)"]
+    R -->|"research data"| W
+    W -->|"draft"| REV
+    REV -->|"feedback"| W
+    W -->|"final"| ORCH
+```
 
 ## Orchestrator Pattern
 
@@ -130,7 +139,17 @@ result = orchestrator.run("Write a report on the current state of AI agent frame
 
 Agents communicate through structured messages, not free-form text. Define a message schema:
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — multi-agent communication structured messages orchestrator delegation
+```mermaid
+sequenceDiagram
+    participant O as Orchestrator
+    participant R as Researcher
+    participant W as Writer
+    O->>R: Task: research topic X
+    R-->>O: Result: findings
+    O->>W: Task: write based on findings
+    W-->>O: Result: draft
+    O->>O: Combine and return
+```
 
 ```python
 class AgentResult(BaseModel):
