@@ -351,7 +351,7 @@ The "only `completed` counts as revenue" sentence is load-bearing — it's the k
 
 ## Part 5: Tool & Evaluation Contracts (no message broker)
 
-No async messaging exists — the contracts at this layer are the tool-call schemas (Part 3) and the **evaluation report**, which is the capstone's grading artifact:
+No async messaging exists — the contracts at this layer are the tool-call schemas (Part 3) and the **evaluation report**, which is the workshop's grading artifact:
 
 ```json
 {
