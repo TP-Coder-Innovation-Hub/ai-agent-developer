@@ -102,6 +102,6 @@ ai-agent-developer/
 │   ├── 02-observability.md
 │   ├── 03-cost-optimization.md
 │   └── 04-deployment.md
-└── 04-capstone/
+└── 04-workshop/
     └── README.md
 ```
