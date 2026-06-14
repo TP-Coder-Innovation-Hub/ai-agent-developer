@@ -11,7 +11,7 @@
 
 ## Business Context
 
-Every company wants to "ask their data" a question and get an answer. Analysts write SQL, build charts, and write reports -- this process takes hours. A data analyst agent collapses that to seconds. A business user types "Why did revenue drop last week?" and gets back data, a chart, and a written explanation. This capstone builds that product.
+Every company wants to "ask their data" a question and get an answer. Analysts write SQL, build charts, and write reports -- this process takes hours. A data analyst agent collapses that to seconds. A business user types "Why did revenue drop last week?" and gets back data, a chart, and a written explanation. This workshop builds that product.
 
 ---
 
