@@ -18,7 +18,7 @@ By the end of this guide you will be able to:
 | 01 | [Agent Architecture](01-agent-architecture/) | Agent loop, tools, memory, planning, multi-agent |
 | 02 | [Building Agents](02-building-agents/) | First agent, RAG, structured output, frameworks |
 | 03 | [Production](03-production/) | Evaluation, observability, cost optimization, deployment |
-| 04 | [Capstone](04-capstone/) | Full agent: web search, document reading, citations |
+| 04 | [Workshop](04-workshop/) | Full agent: web search, document reading, citations |
 
 ## How to Use This Guide
 
