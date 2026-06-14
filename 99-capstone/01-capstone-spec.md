@@ -17,7 +17,7 @@ Every company wants to "ask their data" a question and get an answer. Analysts w
 
 ## Learning Objectives
 
-By completing this capstone you will demonstrate ability to:
+By completing this workshop you will demonstrate ability to:
 
 1. **Agent Architecture** -- Design a multi-step agent with planning, tool use, and orchestration
 2. **Tool Use** -- Implement tools (SQL execution, schema lookup, chart generation, statistical analysis, fact checking) that the LLM calls autonomously
