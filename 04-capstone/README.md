@@ -1,4 +1,4 @@
-# Capstone Project
+# Workshop Project
 
 > **TODO:** Capstone project coming soon.
 >
