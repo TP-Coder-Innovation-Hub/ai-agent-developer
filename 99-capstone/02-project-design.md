@@ -1,4 +1,4 @@
-# Capstone Design: Data Analyst Agent
+# Workshop Design: Data Analyst Agent
 
 > Companion to [01-capstone-spec.md](./01-capstone-spec.md). The spec fixes the agent components, tools, and project structure — this document fixes what it leaves open: the frontend↔backend API contract, the audit/guardrail schemas, the tool-call payload shapes, and seed data with *engineered patterns* so demo questions have deterministic answers.
 
