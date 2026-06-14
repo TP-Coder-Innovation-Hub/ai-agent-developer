@@ -211,7 +211,7 @@ Components (per the spec's structure): `ChatInterface.vue`, `AnswerCard.vue` (co
 
 ## Part 3: API Contracts
 
-No auth (single-user capstone tool; note in README). Errors: `{ "status": 429, "errorCode": "COST_LIMIT_EXCEEDED", "message": "..." }`
+No auth (single-user workshop tool; note in README). Errors: `{ "status": 429, "errorCode": "COST_LIMIT_EXCEEDED", "message": "..." }`
 
 | | |
 |---|---|
