@@ -1,4 +1,4 @@
-# Capstone: Data Analyst Agent
+# Workshop: Data Analyst Agent
 
 > Build an AI agent that answers business questions in natural language by querying databases, running analysis, generating charts, and writing narrative explanations.
 
